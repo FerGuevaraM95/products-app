@@ -18,32 +18,31 @@
             Products App
         </a>
     </nav>
-
-    <!-- APLICATION -->
-    <div class="row pt-5" id="App">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">
-                    <h4>Add A Product</h4>
+    
+    <div class="container">
+        <!-- APLICATION -->
+        <div class="row pt-5" id="App">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add A Product</h4>
+                    </div>
+                    <form class="card-body" id="product-form">
+                        <div class="form-group">
+                            <input class="form-control" id="name" type="text" placeholder="Product Name">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="price" type="number" step="0.01" placeholder="Product Price">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="year" type="number" min="2000" value="2018" placeholder="Year Product">
+                        </div>
+                        <input class="btn btn-primary btn-block" type="submit" value="save">
+                    </form>
                 </div>
-                <form class="card-body" id="product-form">
-                    <div class="form-group">
-                        <input class="form-control" id="name" 
-                        type="text" placeholder="Product Name">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" id="price" 
-                        type="number" step="0.01" placeholder="Product Price">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" id="year" 
-                        type="number" min="2000" value="2018" placeholder="Year Product">
-                    </div>
-                    <input class="btn btn-primary btn-block" type="submit" value="save">
-                </form>
             </div>
+            <div class="col-md-8 mt-4" id="product-list"></div>
         </div>
-        <div class="col-md-8" id="product-list"></div>
     </div>
 
     <script src="App.js"></script>
